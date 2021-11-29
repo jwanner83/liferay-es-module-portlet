@@ -1,14 +1,14 @@
-import commonjs from '@rollup/plugin-commonjs'
-import resolve from '@rollup/plugin-node-resolve'
-import esbuild from 'rollup-plugin-esbuild'
-import replace from '@rollup/plugin-replace'
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import esbuild from "rollup-plugin-esbuild";
+import replace from "@rollup/plugin-replace";
 
 export default [
   {
-    input: 'src/index.tsx',
+    input: "src/index.ts",
     output: {
-      format: 'esm',
-      dir: 'assets/lib'
+      format: "esm",
+      dir: "assets/lib",
     },
     plugins: [
       resolve(),
@@ -16,16 +16,16 @@ export default [
       esbuild(),
       replace({
         preventAssignment: true,
-        'process.env.NODE_ENV': JSON.stringify('production')
-      })
-    ]
+        "process.env.NODE_ENV": JSON.stringify("production"),
+      }),
+    ],
   },
   {
-    input: 'src/entry.js',
+    input: "src/entry.js",
     output: {
-      format: 'commonjs',
-      exports: 'default',
-      file: 'build/entry.js'
-    }
-  }
-]
+      format: "commonjs",
+      exports: "default",
+      file: "build/entry.js",
+    },
+  },
+];
