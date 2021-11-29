@@ -1,0 +1,9 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"web-context": "/es-react-provider"
+		}
+	},
+    "ignore": ["lib/*"]
+}
