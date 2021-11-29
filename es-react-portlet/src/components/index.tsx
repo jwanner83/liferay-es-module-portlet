@@ -1,4 +1,5 @@
-import { React } from '/o/es-react-provider/lib/index.js'
+import { React } from 'es-react-provider'
+import { SampleComponent } from 'es-react-components'
 import PortletEntryParams from '../types/PortletEntryParams'
 import LiferayObject from '../types/LiferayObject'
 
@@ -7,6 +8,8 @@ declare const Liferay: LiferayObject
 const App = (liferayParams: PortletEntryParams): any => {
   return (
     <div>
+      <SampleComponent />
+      
       <div>
         <span className="tag">
           {String(Liferay.Language.get('portlet-namespace'))}:

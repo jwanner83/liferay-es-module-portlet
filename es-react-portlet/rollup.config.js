@@ -21,12 +21,14 @@ export default [
       }),
       alias({
         entries: [
-          { find: 'es-react-provider', replacement: '/o/es-react-provider/lib/index.js' }
+          { find: 'es-react-provider', replacement: '/o/es-react-provider/lib/index.js' },
+          { find: 'es-react-components', replacement: '/o/es-react-components/lib/index.js' }
         ]
       })
     ],
     external: [
-      '/o/es-react-provider/lib/index.js'
+      '/o/es-react-provider/lib/index.js',
+      '/o/es-react-components/lib/index.js'
     ]
   },
   {
