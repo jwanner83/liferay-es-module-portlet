@@ -2,7 +2,7 @@
 Sample repository to show how to use Liferay portlets with es modules.
 
 ## Goal
-Provide packages and components with a portlet and import them on runtime into a portlet. This should increase build time to a minimum because the `liferay-npm-bundler` doesn't has to transpile files and only creates a jar file. 
+Provide packages and components with a portlet and import them on runtime into a portlet. This should increase build time to a minimum because the `liferay-npm-bundler` doesn't have to transpile files and only creates a jar file. 
 
 ## Explenation
 The concept includes two modules. A provider module and a consumer modules. They are connected in a `n to n` relation. 
